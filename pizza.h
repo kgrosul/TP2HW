@@ -12,7 +12,7 @@ class  CPizza{
     friend class CMargaritaPizzaBuilder;
     friend class C4CheesesPizzaBuilder;
     friend class CCustomPizzaBuilder;
-    friend class CPizzaBuilder;
+    friend class CHawaiianPizzaBuilder;
 
     std::string dough;
     std::vector<std::string> ingredients;
