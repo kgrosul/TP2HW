@@ -9,17 +9,23 @@
 #include <memory>
 
 class  CPizza{
+    friend class CMargaritaPizzaBuilder;
+    friend class C4CheesesPizzaBuilder;
+    friend class CCustomPizzaBuilder;
+    friend class CPizzaBuilder;
+
     std::string dough;
     std::vector<std::string> ingredients;
     std::vector<std::string> sauces;
     int price;
 
-public:
     void setDough(const std::string& d);
     void setSauces(const std::vector<std::string> &s);
     void setIngredients(const std::vector<std::string> &i);
     void cook(int time);
     void setPrice(int money);
+
+public:
     std::string showDough() const;
     std::vector<std::string> showIngredients() const;
     std::vector<std::string> showSauces() const;
